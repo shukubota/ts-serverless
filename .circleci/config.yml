@@ -10,6 +10,7 @@ jobs:
       - run: node --version
       - run: npm install
       - run: npx sls --version
+      - run: npx sls deploy --stage stg
 
   test:
     docker:
