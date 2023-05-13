@@ -9,7 +9,7 @@ jobs:
       - run: echo "this is the build job"
       - run: node --version
       - run: npm install
-      - run: sls --version
+      - run: npx sls --version
 
   test:
     docker:
