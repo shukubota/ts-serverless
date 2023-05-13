@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:18
+      - image: cimg/node:18.15.0
     steps:
       - checkout
       - run: echo "this is the build job"
@@ -13,7 +13,7 @@ jobs:
 
   test:
     docker:
-      - image: cimg/node:18
+      - image: cimg/node:18.15.0
     steps:
       - checkout
       - run: echo "this is the test job"
